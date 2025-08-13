@@ -5,6 +5,29 @@ body {
     color: #fff;
     font-family: sans-serif;
 }
-.figmabox { 
+.figma-box { 
+    background-color: #2C2C2C;
+    width: 100%vw;
+    height: 100vh;
+    display: flex;
+     /* 피그마에서 auto레이아웃 역할과 같다 */
+    flex-direction: column;
+    gap: 90px;
+    /* 메인축으로의 정렬 */
+    justify-content: center;
+    /* 교차축으로의 정렬 */
+    align-items: center;
+}
+
+img {
+    width: 90px;
     
+}
+
+p {
+    font-size: 18px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 1;
+   letter-spacing: 0.5px;
 }
