@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ol li {
+        background-color: olive;
+        font-size: 30px;
+        }
+    ul li {
+        background-color: gold;
+        font-size: 12px;
+    }
+
+    h1 {
+        color: red;
+        color: blue;
+        color: green;
+    }
+</style>
+
+<body>
+
+    &lt;h1&gt;태그는 가장 큰 헤딩요소이다. 
+
+   <header>
+    <h1>CODING CAMP</h1>
+    <!-- nav태그는 웹사이트의 메인메뉴를 표시하는 시멘틱 태그이다. -->
+    <nav>
+        <ul> <!-- Unordered List 순번이 없는 목록-->
+            <li> <!-- Li sms List item이라는 뜻-->
+                <a href="./001.html">About</a>
+            </li>
+            <li>
+                <a href="./002.html">Product</a>
+            </li>
+            <li>
+                <a href="./003.html">ConatactUs</a>
+            </li>
+        </ul>
+    </nav>
+   </header>
+
+   <main>
+    <h2>APPLE</h2>
+    <p>mango</p>
+    <!-- 
+    만약 ol이나 ul의 타입을 바꿔야한다면, html속성을 쓰지말고, 
+    CSS로 처리하도록 하는것이 웹표준이다
+     -->
+    <ol start="10"> <!-- ordered list 순번이 있는 목록 -->
+        <li>Oredered List 1
+            <ul>
+                <li><a href="#">Sub menu 1</menu></a></li>
+                <li><a href="#">Sub menu 2</menu></a></li>
+             </ul>
+        </li>
+        <li>Oredered List 2</li>
+        <li>Oredered List 3</li>
+    </ol>
+   </main>
+   <footer>
+    <p>&copy;</p>
+   </footer>
+
+</body>
+</html>
