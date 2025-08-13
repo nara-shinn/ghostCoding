@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+img {
+    width: 273px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+p { 
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.button {
+    width: 283px;
+    height: 42px;
+    border: 1px solid white;
+}
