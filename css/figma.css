@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "UTF-8";
 
 body {
     background-color: #2C2C2C;
@@ -6,8 +6,7 @@ body {
     font-family: sans-serif;
 }
 .figma-box { 
-    background-color: #2C2C2C;
-    width: 100%vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
      /* 피그마에서 auto레이아웃 역할과 같다 */
@@ -21,7 +20,6 @@ body {
 
 img {
     width: 90px;
-    
 }
 
 p {
