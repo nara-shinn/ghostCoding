@@ -20,5 +20,6 @@ p {
 .button {
     width: 283px;
     height: 42px;
+    color: #1E1E1E;
     border: 1px solid white;
 }

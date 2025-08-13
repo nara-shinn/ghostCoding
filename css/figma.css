@@ -29,3 +29,17 @@ p {
    line-height: 1;
    letter-spacing: 0.5px;
 }
+
+img {
+    width: 273px;
+}
+
+.a { 
+  display: inline-block;
+  color: #1e1e1e;
+  width: 283px;
+  height: 42px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+
