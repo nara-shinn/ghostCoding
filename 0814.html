@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0814</title>
     <style>
+        :root {
+            --primary: #d81e27;
+            --tittle: 56px;
+        }
+html {
+    font-size: 16px;
+}
+
 body {
+
+    font-size: 12px;
     /* background-color: #4f4673;
     color: #b7afd3;
     background-image: url(./images/ghost_n1.png);
@@ -70,10 +80,28 @@ section {
     background-position: right bottom;
 }
 
+.tittle {
+    color: var(--primary);
+}
+
+em {
+    font-size: 1rem;
+    /* rem html상속 */
+}
+i {
+    font-size: 1em;
+    /* em 부모 상속 */
+}
+
     </style>
 
 </head>
 <body>
+
+<em> Hello world</em>
+<i> Hello world</i>
+<hr>
+
     <div class="tumb">
         <img src="./images/toons/kosigi-wale.jpg" src="thub">
     </div>
@@ -84,7 +112,9 @@ section {
          해아하는 것들을 글씨로 쓰고 날리는 것-->
           <!-- opt+방향키로 자리 옮기기 가능 -->
         </div>
- 
+
+        <h1 class="tittle">heading</h1>
+
         <section>
          <p>
              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ex ducimus reprehenderit possimus a, fugiat, neque, deleniti repellat velit enim laudantium dolore cupiditate nulla labore! Vel nostrum nobis harum officiis.

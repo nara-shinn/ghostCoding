@@ -1,65 +1,99 @@
 @charset "utf-8";
 
 body {
-   background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) no-repeat left top/100% auto fixed;
-   color: #fff;
+    background: #1e1e1e url(./images/2799484.jpg);
+    color: #fff;
 }
+
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    margin: 0 0 -120px;
-    padding: 0 24px;
-    border: 1px solid aqua;
-}
-
-.header-button {
-    margin: 0 0 0 -12px;
-    padding: 3px;
-    width: 62px;
-    height: 32px;
-    padding: 6px 24px 6px 34px
-}
-select {
-   width: 62px;
-   height: 32px;
-
-   border: ;
-}
-
-.login {
-    background-color: red;
-}
-
-.container {
-    width: 100%;
-    height: 468px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: calc(100%+16px);
+    height: 80px;
+    margin: 0 120px;
     border: 1px solid gold;
 }
 
-h1 {
-    font-size: 32px;
+h1 { 
+    margin: 0 0 0 16px;
+}
+
+img {
+    width: 148px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    width: calc(100% + 12px);
+
+    margin: 0 0 -12px 0;
+    padding: 3px;
+    row-gap: 12px;
+    box-sizing: border-box;
+    border: 1px solid pink;
+}
+
+select {
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 6px 36px 6px 34px;
+    color: inherit;
+    background: transparent;
+    min-width: auto;
+    width: auto;
+    min-height: 16px;
+}
+
+button {
+    font: inherit;
+    text-align: center;
+    padding: 6px 36px 6px 34px;
+    border: 1px solid red;
+}
+
+.onboarding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% + 16px)
+    min-width: 120rem;
+    height: 560px;
+    min-height: 37rem;
+    padding: 0 32px 32px 32px;
+    margin: -2rem auto 0 auto;
+    border: 1px solid gold;
+
+}
+
+h2 { 
+    width: 508px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
     margin-bottom: 8px;
 }
 
-p {
-    font-size: 16px;
-    margin-bottom: 16px;
+h3 { 
+   width: 508px;
+   height: 21px;
+   margin-bottom: 24px;
+   font-size: 16px;
 }
 
-h2 {
+p { 
     font-size: 16px;
 }
 
-.email {
-    width: 340px;
-    height: 24px;
-    border: ;
-    padding: 20px 16px 4px;
+form {
+    width: 508px;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid red;
 }
