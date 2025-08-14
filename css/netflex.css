@@ -2,4 +2,56 @@
 
 body {
    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) no-repeat left top/100% auto fixed;
+   color: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    height: 80px;
+    margin: 0 0 0 -16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-button {
+    margin: 0 0 0 -12px;
+    padding: 3px;
+}
+select {
+   width: 62px;
+   height: 32px;
+   padding: 6px 24px 6px 34px
+   border: ;
+}
+
+.login {
+    background-color: red;
+}
+
+.container {
+    width: 586px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 32px;
+}
+
+.p {
+    font-size: 16px;
+}
+
+.h2 {
+    font-size: 16px;
+}
+
+.email {
+    width: 340px;
+    height: 24px;
+    border: ;
+    padding: 20px 16px 4px;
 }
