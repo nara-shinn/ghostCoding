@@ -1,30 +1,142 @@
 @charset "utf-8";
 
 body {
-    background: #1e1e1e url(./images/2799484.jpg);
+    background: #000 url(../images/monsters.jpg) no-repeat center top/100%; 
     color: #fff;
+    font-family: sans-serif;
 }
 
-.header {
+.page-header {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    /* align items: center 주면 가운데 정렬이 되는데 margin으로 가운데 정렬을 맞춰야하나? 둘 중 하나만 하면 안되나? */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: calc(100%+16px);
     height: 80px;
-    margin: 0 120px;
-    border: 1px solid gold;
+    align-items: center;
+    padding: 0 80px;
+    background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(46, 22, 28, 0) 100%
+    /* 그라디언트는 전체 페이지에 주는게 아니라 header에만 주는거? */
+  );
+  box-sizing: border-box;
 }
 
-h1 { 
+.page-header h1 {
+    width: 148px;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+}
+
+.nav select {
+    height: 32px;
+    border-radius: 8px;
+    padding: 0 36px;
+    background: url(../images/netflix_lang_icon.svg) no-repeat left center;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+
+}
+
+.nav button { 
+    height: 32px;
+    border: none;
+    /* 자동으로 border가 들어가는건 기본 설정 떄문?? */
+    border-radius: 8px;
+    min-width: 124px;
+    padding: 0 36px;
+    background-color: #d81e27;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.onboarding {
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.onboarding h2 {
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+.onboarding p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 32px;
+}
+
+.onboarding h3 {
+ font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.input-container {
+    height: 58px;
+    display: flex;
+    gap: 8px;
+}
+
+.input-container input {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #fff;
+    flex-grow: 1;
+    font-size: inherit;
+    color: inherit;
+    border-radius: 8px;
+}
+
+.input-container button {
+    background-color: #d81e27;
+    width: 140px;
+    color: inherit;
+    border: none;
+    border-radius: 8px;
+    font-size: inherit;
+}
+
+/* 내가 한 거
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 120px; */
+ /* h1 { 
     margin: 0 0 0 16px;
 }
 
 img {
     width: 148px;
-    height: 40px;
-}
+    height: 40px; */
+/* } */
 
-.nav {
+/* .nav {
     display: flex;
     width: calc(100% + 12px);
 
@@ -33,9 +145,9 @@ img {
     row-gap: 12px;
     box-sizing: border-box;
     border: 1px solid pink;
-}
+} */
 
-select {
+/* select {
     font-family: unset;
     font-size: 1rem;
     font-weight: 400;
@@ -96,4 +208,5 @@ form {
     height: 56px;
     padding: 16px;
     border: 1px solid red;
-}
+} */
+
