@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0814</title>
+    <style>
+body {
+    /* background-color: #4f4673;
+    color: #b7afd3;
+    background-image: url(./images/ghost_n1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80% auto;
+    background-attachment: fixed; 
+    축약형으로 쓸때는 백그라운드를 지정하지 않으면 브라우저 내장 기본 값이 들어가게된다. 내가 써주지 않은 값은 기본 값으로 리셋된다. 
+    size를 쓸 땐 꼭 앞에 position을 넣어줘야하고 "/ 슬레쉬"를 넣어줘야한다.*/
+    background: #4f4673 url(./images/ghost_n1.png) no-repeat right bottom/80% auto fixed;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(140, 59, 105, 1) 27%, rgba(79, 33, 59, 1) 83%, rgba(0, 0, 0, 1) 100%);
+
+    /* background: transparent none repeat left top/auto scroll; */
+
+}
+
+.tumb { 
+    width: 240px;
+    height: 170px;
+    border-radius: 12px 12px 0 0;
+    outline: 2px solid red;
+    overflow: hidden;
+}
+
+.tumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tumb-ir {
+    width: 240px;
+    height: 170px;
+    border-radius: 12px 12px 0 0;
+    outline: 2px solid red;
+    margin-top: 20px;
+    background-image: url(./images/toons/kosigi-wale.jpg);
+    background-size: 70px auto;
+    background-repeat: no-repeat;
+    background-position: right 30px center -10px;
+    /* 이미지 태그로 사용했을 떄 보다 span으로 활용해서 훨씬 자유롭게 사용가능해서 많이 사용하는 태그 */
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: url(./images/ghost_n1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="tumb">
+        <img src="./images/toons/kosigi-wale.jpg" src="thub">
+    </div>
+
+    <div class="tumb-ir">
+        <span class="blind">illust image</span>
+        <!-- 접근성 때문에 텍스트 넣어준 것. 그러나 보기 싫음으로 ir기법 사용: 정보제공을 
+         해아하는 것들을 글씨로 쓰고 날리는 것-->
+          <!-- opt+방향키로 자리 옮기기 가능 -->
+        </div>
+ 
+        <section>
+         <p>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ex ducimus reprehenderit possimus a, fugiat, neque, deleniti repellat velit enim laudantium dolore cupiditate nulla labore! Vel nostrum nobis harum officiis.
+         </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt est similique maxime! Sapiente sunt, temporibus distinctio quod dignissimos, accusantium saepe quibusdam deleniti culpa dolor, iusto consequatur. At, voluptatibus illum?
+        Laborum esse iste repellat ipsam, eaque ullam eius deserunt voluptatem rerum rem tempora modi beatae repudiandae quisquam tenetur praesentium aliquid quod in? Facere quisquam deleniti harum, excepturi quas quo molestias!
+        Hic, eius ducimus animi inventore id ipsum quidem, dolor tempore nisi praesentium quaerat voluptas deleniti minima alias veritatis. Saepe eos perspiciatis eum sed dolor. Blanditiis at ducimus corporis unde velit!
+        Minima, quia? Quo, adipisci nostrum dolores libero architecto magni, harum commodi blanditiis reprehenderit, quos cupiditate ipsam asperiores. Esse repellat quisquam maxime nobis nesciunt! In possimus ducimus ipsum impedit, mollitia fugiat.
+        Labore aspernatur voluptate rerum distinctio possimus accusamus asperiores consequatur minima eaque maiores a, qui hic reprehenderit nam, suscipit ullam maxime voluptatibus architecto excepturi molestias optio molestiae iste nobis in? Sed.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt est similique maxime! Sapiente sunt, temporibus distinctio quod dignissimos, accusantium saepe quibusdam deleniti culpa dolor, iusto consequatur. At, voluptatibus illum?
+        Laborum esse iste repellat ipsam, eaque ullam eius deserunt voluptatem rerum rem tempora modi beatae repudiandae quisquam tenetur praesentium aliquid quod in? Facere quisquam deleniti harum, excepturi quas quo molestias!
+        Hic, eius ducimus animi inventore id ipsum quidem, dolor tempore nisi praesentium quaerat voluptas deleniti minima alias veritatis. Saepe eos perspiciatis eum sed dolor. Blanditiis at ducimus corporis unde velit!
+        Minima, quia? Quo, adipisci nostrum dolores libero architecto magni, harum commodi blanditiis reprehenderit, quos cupiditate ipsam asperiores. Esse repellat quisquam maxime nobis nesciunt! In possimus ducimus ipsum impedit, mollitia fugiat.
+        Labore aspernatur voluptate rerum distinctio possimus accusamus asperiores consequatur minima eaque maiores a, qui hic reprehenderit nam, suscipit ullam maxime voluptatibus architecto excepturi molestias optio molestiae iste nobis in? Sed.
+     </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt est similique maxime! Sapiente sunt, temporibus distinctio quod dignissimos, accusantium saepe quibusdam deleniti culpa dolor, iusto consequatur. At, voluptatibus illum?
+        Laborum esse iste repellat ipsam, eaque ullam eius deserunt voluptatem rerum rem tempora modi beatae repudiandae quisquam tenetur praesentium aliquid quod in? Facere quisquam deleniti harum, excepturi quas quo molestias!
+        Hic, eius ducimus animi inventore id ipsum quidem, dolor tempore nisi praesentium quaerat voluptas deleniti minima alias veritatis. Saepe eos perspiciatis eum sed dolor. Blanditiis at ducimus corporis unde velit!
+        Minima, quia? Quo, adipisci nostrum dolores libero architecto magni, harum commodi blanditiis reprehenderit, quos cupiditate ipsam asperiores. Esse repellat quisquam maxime nobis nesciunt! In possimus ducimus ipsum impedit, mollitia fugiat.
+        Labore aspernatur voluptate rerum distinctio possimus accusamus asperiores consequatur minima eaque maiores a, qui hic reprehenderit nam, suscipit ullam maxime voluptatibus architecto excepturi molestias optio molestiae iste nobis in? Sed.
+        </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt est similique maxime! Sapiente sunt, temporibus distinctio quod dignissimos, accusantium saepe quibusdam deleniti culpa dolor, iusto consequatur. At, voluptatibus illum?
+        Laborum esse iste repellat ipsam, eaque ullam eius deserunt voluptatem rerum rem tempora modi beatae repudiandae quisquam tenetur praesentium aliquid quod in? Facere quisquam deleniti harum, excepturi quas quo molestias!
+        Hic, eius ducimus animi inventore id ipsum quidem, dolor tempore nisi praesentium quaerat voluptas deleniti minima alias veritatis. Saepe eos perspiciatis eum sed dolor. Blanditiis at ducimus corporis unde velit!
+        Minima, quia? Quo, adipisci nostrum dolores libero architecto magni, harum commodi blanditiis reprehenderit, quos cupiditate ipsam asperiores. Esse repellat quisquam maxime nobis nesciunt! In possimus ducimus ipsum impedit, mollitia fugiat.
+        Labore aspernatur voluptate rerum distinctio possimus accusamus asperiores consequatur minima eaque maiores a, qui hic reprehenderit nam, suscipit ullam maxime voluptatibus architecto excepturi molestias optio molestiae iste nobis in? Sed.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt est similique maxime! Sapiente sunt, temporibus distinctio quod dignissimos, accusantium saepe quibusdam deleniti culpa dolor, iusto consequatur. At, voluptatibus illum?
+        Laborum esse iste repellat ipsam, eaque ullam eius deserunt voluptatem rerum rem tempora modi beatae repudiandae quisquam tenetur praesentium aliquid quod in? Facere quisquam deleniti harum, excepturi quas quo molestias!
+        Hic, eius ducimus animi inventore id ipsum quidem, dolor tempore nisi praesentium quaerat voluptas deleniti minima alias veritatis. Saepe eos perspiciatis eum sed dolor. Blanditiis at ducimus corporis unde velit!
+        Minima, quia? Quo, adipisci nostrum dolores libero architecto magni, harum commodi blanditiis reprehenderit, quos cupiditate ipsam asperiores. Esse repellat quisquam maxime nobis nesciunt! In possimus ducimus ipsum impedit, mollitia fugiat.
+        Labore aspernatur voluptate rerum distinctio possimus accusamus asperiores consequatur minima eaque maiores a, qui hic reprehenderit nam, suscipit ullam maxime voluptatibus architecto excepturi molestias optio molestiae iste nobis in? Sed.
+        </p>
+    </section>
+</body>
+</html>
