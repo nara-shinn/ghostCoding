@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 body {
-    background: #000 url(../images/monsters.jpg) no-repeat center top/100%; 
+    background: #000 url(../images/monsters.jpg) no-repeat center top/100% auto; 
     color: #fff;
     font-family: sans-serif;
 }
 
 .page-header {
     width: 100%;
-    max-width: 1290px;
     margin: 0 auto;
     /* align items: center 주면 가운데 정렬이 되는데 margin으로 가운데 정렬을 맞춰야하나? 둘 중 하나만 하면 안되나? */
     display: flex;
@@ -22,10 +21,9 @@ body {
     rgba(46, 22, 28, 0) 100%
     /* 그라디언트는 전체 페이지에 주는게 아니라 header에만 주는거? */
   );
-  box-sizing: border-box;
 }
 
-.page-header h1 {
+.page-header h1 img {
     width: 148px;
 }
 
@@ -34,31 +32,49 @@ body {
     gap: 12px;
 }
 
-.nav select {
+.nav select, .nav button {
     height: 32px;
+    border-radius: 8px;
+    padding: 0 36px;
+    min-width: 124px;
+    font-size: 16px;
+    color: inherit;
+}
+
+.nav select {
+    border: 1px solid #fff;
+    padding-left: 30px;
+    /* 이미지 넣으니까 배경색 빠지고, 글씨에 흰색 준 거 풀리는 이유가 뭐지? */
+    background: url(../images/netflix_lang_icon.svg) no-repeat 12px center/20px auto;
+
+    /* height: 32px;
     border-radius: 8px;
     padding: 0 36px;
     background: url(../images/netflix_lang_icon.svg) no-repeat left center;
     color: inherit;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.25; */
 
 }
 
 .nav button { 
-    height: 32px;
+    background-color: #d81e27;
+    border: inherit;
+   
+
+    /* height: 32px;
     border: none;
-    /* 자동으로 border가 들어가는건 기본 설정 떄문?? */
-    border-radius: 8px;
+    /* 자동으로 border가 들어가는건 브라우저 기본 설정 떄문?? */
+    /* border-radius: 8px;
     min-width: 124px;
     padding: 0 36px;
     background-color: #d81e27;
     color: inherit;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.25;
-}
+    line-height: 1.25; */
+} 
 
 .onboarding {
     width: 100%;
@@ -70,7 +86,7 @@ body {
     text-align: center;
     flex-direction: column;
     margin: 0 auto;
-    box-sizing: border-box;
+    gap: 20px;
 }
 
 .onboarding h2 {
@@ -84,7 +100,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .onboarding h3 {
@@ -98,11 +114,28 @@ body {
 .input-container {
     height: 58px;
     display: flex;
+    margin-top: 1rem;
     gap: 8px;
 }
 
+.input-container input, .input-container button {
+    border-radius: 8px;
+    padding: 0 1.25rem;
+    border: inherit;
+}
+
 .input-container input {
-    padding: 8px 16px;
+    flex-grow: 1;
+}
+
+.input-container button {
+    background-color: #d81e27;
+    font-size: 1.25rem;
+    color: inherit;
+}
+
+/* .input-container input {
+    padding: 8px 1rem;
     background: none;
     border: 1px solid #fff;
     flex-grow: 1;
@@ -117,9 +150,7 @@ body {
     color: inherit;
     border: none;
     border-radius: 8px;
-    font-size: inherit;
-}
-
+    font-size: inherit; */
 /* 내가 한 거
 
     /* display: flex;
