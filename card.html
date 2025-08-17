@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/card.css">
+</head>
+
+<body>
+
+    <h1>Card layout</h1>
+    <section class="card-container horizon-box">
+        <div class="thumbs">
+            <img src="./images/card_thumb_0.jpg" alt="space sea">
+        </div>
+
+        <div class="contents">
+           <q>A line of code can creat a whloe new world, start now!</q>
+           <h2>CODING IS MORE FUN<br>THAN YOU THINK!</h2>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor velit perferendis illum ab sed modi labore recusandae expedita eum adipisci laboriosam aliquam, sit rem 
+           </p>
+
+           <div class="writer">
+            <img src="./images/profile_0.jpg" alt="camel">
+            <div>
+                <strong class="user">Created by Dedblangcia</strong>
+                <span class="created">3minuates ago</span>
+            </div>
+           </div>
+        </div>
+
+    </section>
+    <button type="button" id="change-btn">모드바꾸기</button>
+    <script>
+        const cardBox = document.querySelector('.card-container')
+        const btn = document.getElementById('change-btn');
+        btn.addEventListener('click',() => {
+            cardBox.classList.toggle('horizon-box')
+        })
+        let status = cardBox.classList.contains('horizon-box');
+        console.log('현재상태는 : ',status,'입니다.')
+    </script>
+
+</body>
+</html>
