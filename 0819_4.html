@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .thumb {
+        width: 200px;
+        height: 170px;
+        /* overflow: hidden; */
+        border-radius: 12px;
+        margin: 50px auto;
+        border: 1px solid tomato;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        translate: 0.5s;
+        position: relative;
+        /* relative 기준이 되주는 것 */
+    }
+
+    .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: translate 0.5s, scale 1.5;
+    }
+
+    .btn_like:hover {
+        background-image: url(./images/icons/house.svg);
+    }
+
+    .btn_like {
+        /* 사용자 클릭 영역 고려해서 넓게 잡은 것 */
+        width: 36px;
+        height: 36px;
+        /* background-image:  url(./images/icons/talkstar.svg);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center center; */
+        background: url(./images/icons/cafe.svg) no-repeat center center/24px auto;
+        position: absolute;
+        /* absolute: 절대적인 위치. 피그마에서 포지션 자유로 주는 것같이 */
+        right: 12px;
+        top: 12px;
+    }
+
+    .btn_facebook:hover {
+        background-color: brown;
+        translate: 0 -8px;
+    }
+
+    .btn_facebook {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: url(./images/icons/sns_facebook.png) no-repeat dodgerblue center center/contain;
+        position: absolute;
+        right: 56px;
+        top: 18px;
+        transition: translate 0.5s;
+
+    }
+
+</style>
+
+<body>
+     <div class="thumb">
+        <img src="./images/card_thumb_0.jpg" alt="d">
+        <button type="button" class="btn_like">
+           
+            <span class="blind">좋아요</span>
+
+        <button> 
+            <a href="#" class="btn_facebook">
+                LINK
+            <span class="blind">facebook</span>
+        </button>
+    </div>
+</body>
+
+</html>

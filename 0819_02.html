@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .tBox {
+        max-width: 800px;
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .tBox th[scope="row"] {
+        background-color:  #f3f3f3;
+    }
+
+    .tBox th[scope="col"] {
+        background-color:  #a63a4c;
+        color: #fff;
+    }
+
+    .tBox td {
+        text-align: center;
+    }
+</style>
+
+
+<body>
+    <table class="tBox">
+        <caption>성적표</caption>
+        <colgroup>
+            <col style="width: 240px;">
+            <col style="width: calc( (100%-240px) /3);" span="3">
+            <col>
+            <col>
+         </colgroup>
+
+    
+        <thead>
+            <!-- td 태그가 있으면 안된다. 제목셀만을 갖고하기 때문 -->
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">영어</th>
+        <th scope="col">수학</th>
+         </thead>
+
+        <tfoot>
+        <tr>
+            <th scope="row">Average</th>
+            <td>70</td>
+            <td>40</td>
+            <td>50</td>
+        </tr>
+         </tfoot>
+
+         <tbody>
+            <tr>
+                <th scope="row">홍길동</th>
+                <td>39</td>
+                <td>30</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <th scope="row">손석구</th>
+                <td>88</td>
+                <td>20</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <th scope="row">탄지로</th>
+                <td>90</td>
+                <td>20</td>
+                <td>70</td>
+            </tr>
+            </tbody>
+
+  
+
+    </table>
+</body>
+</html>
