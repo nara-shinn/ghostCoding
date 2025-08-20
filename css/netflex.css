@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+:root {
+  --primary: #d81e27;
+  --title: 56px;
+  --description: 20px;
+  --radius-s: 0.24rem;
+  --radius-m: 0.5rem;
+  --radius-l: 1rem;
+  --grd-type-a: linear-gradient(91deg, #261733, #151a3f);
+  --max-w: 1414px;
+}
+
 body {
     background: #000 url(../images/monsters.jpg) no-repeat center top/100% auto; 
     color: #fff;
@@ -136,18 +147,18 @@ body {
 
 .container 
 {
-    max-width: 1080px;
+    max-width: 1414px;
     width: 100%;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 32px 16px;
-    border-radius: 20px;
-    background-color: gray;
-    transition: 1s;
-
+    border-radius: var(--radius-l);
+    background-image: var(--grd-type-a);
+    position: relative;
+    transition: 0.4s;
 }
 
 .container:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 .container h4, strong {
@@ -155,7 +166,7 @@ body {
 }
 
 .container p {
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 
 .container a {
@@ -166,9 +177,14 @@ body {
     height: 40px;
     margin-top: 16px;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: var(--radius-s);
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    translate: 0 -50%;
+    transition: 0.4s;
 }
 
-.container strong {
-    font-size: 16px;
+.container a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
