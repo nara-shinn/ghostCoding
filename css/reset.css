@@ -60,3 +60,6 @@ table {
 /* collapse 겹치기 */
 }
 
+em {
+    font-style: inherit;
+}

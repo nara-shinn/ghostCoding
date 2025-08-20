@@ -134,110 +134,41 @@ body {
     color: inherit;
 }
 
-/* .input-container input {
-    padding: 8px 1rem;
-    background: none;
-    border: 1px solid #fff;
-    flex-grow: 1;
-    font-size: inherit;
-    color: inherit;
-    border-radius: 8px;
-}
-
-.input-container button {
-    background-color: #d81e27;
-    width: 140px;
-    color: inherit;
-    border: none;
-    border-radius: 8px;
-    font-size: inherit; */
-/* 내가 한 거
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    margin: 0 120px; */
- /* h1 { 
-    margin: 0 0 0 16px;
-}
-
-img {
-    width: 148px;
-    height: 40px; */
-/* } */
-
-/* .nav {
-    display: flex;
-    width: calc(100% + 12px);
-
-    margin: 0 0 -12px 0;
-    padding: 3px;
-    row-gap: 12px;
-    box-sizing: border-box;
-    border: 1px solid pink;
-} */
-
-/* select {
-    font-family: unset;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.25;
-    padding: 6px 36px 6px 34px;
-    color: inherit;
-    background: transparent;
-    min-width: auto;
-    width: auto;
-    min-height: 16px;
-}
-
-button {
-    font: inherit;
-    text-align: center;
-    padding: 6px 36px 6px 34px;
-    border: 1px solid red;
-}
-
-.onboarding {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: calc(100% + 16px)
-    min-width: 120rem;
-    height: 560px;
-    min-height: 37rem;
-    padding: 0 32px 32px 32px;
-    margin: -2rem auto 0 auto;
-    border: 1px solid gold;
+.container 
+{
+    max-width: 1080px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 32px 16px;
+    border-radius: 20px;
+    background-color: gray;
+    transition: 1s;
 
 }
 
-h2 { 
-    width: 508px;
-    height: 50px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 125%;
-    margin-bottom: 8px;
+.container:hover {
+    scale: 1.2;
 }
 
-h3 { 
-   width: 508px;
-   height: 21px;
-   margin-bottom: 24px;
-   font-size: 16px;
+.container h4, strong {
+    font-size: 20px;
 }
 
-p { 
+.container p {
     font-size: 16px;
 }
 
-form {
-    width: 508px;
-    height: 56px;
-    padding: 16px;
-    border: 1px solid red;
-} */
+.container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 40px;
+    margin-top: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
 
+.container strong {
+    font-size: 16px;
+}
