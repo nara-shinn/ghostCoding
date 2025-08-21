@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before, after</title>
+</head>
+<style>
+    body {
+        background-color: #f3f3f3;
+    }
+
+    .container {
+        width: 400px;
+        height: 600px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        margin: 50px auto;
+    }
+
+    .line-container {
+        text-align: center;
+        position: relative;
+    }      
+    .line-container::before, 
+    .line-container::after{
+        content: '';
+        width: 50%;
+        height: 1px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        background-color: red;
+    }
+
+    .line-container strong {
+        background-color: #fff;
+        padding: 0 10px;
+        position: relative;
+        z-index: 10;
+    }
+
+.line-container::before {
+    left: 8px;
+}
+
+.line-container::after {
+    right: 8px;
+}
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="line-container">
+             <strong>또는(or)</strong>
+        </div>
+    </div>
+
+</body>
+</html>

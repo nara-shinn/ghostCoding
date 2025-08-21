@@ -17,6 +17,8 @@ body {
 .card-container .thumb {
     height: 170px;
     overflow: hidden;
+    border: 12px 12px 0 0;
+    position: relative;
 }
 
 .card-container .thumb img {
@@ -25,8 +27,37 @@ body {
     object-fit: cover;
 }
 
+.card-container .dimm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .card-container .contents {
     padding: 12px;
+    position: relative;
+}
+
+.card-container .btn-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0 -50%;
+    right: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-container .btn-profile:hover {
+    transform: scale(1.1) rotate(-45deg);
+}
+
+.btn-profile img {
+    object-fit: cover;
 }
 
 .contents strong {
@@ -49,4 +80,38 @@ body {
     color: #fff;
     padding: 5px 10px;
     border-radius: 10px;
+}
+
+body {
+    height: 2000px;
+}
+
+.btn-top {
+    background-color: tomato;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.dimm {
+    position: fixed;
+    /* left: 0;
+    top: 0;
+    right: 0; */
+    inset: 0 0 0 0; /* 상, 우, 하, 좌 */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.modal{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    /* left: calc(50%-150px);
+    right: calc(50%-150px); */
+    left: 50%; top: 50%;
+    translate: -50% -50%;
+    z-index: 101;
+    /* transform: translate(-50% -50%); */
 }

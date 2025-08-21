@@ -8,13 +8,15 @@
   --radius-m: 0.5rem;
   --radius-l: 1rem;
   --grd-type-a: linear-gradient(91deg, #261733, #151a3f);
+  --grd-type-a-hover: linear-gradient(91deg, #4c2e66, #212964);
   --max-w: 1414px;
 }
 
 body {
-    background: #000 url(../images/monsters.jpg) no-repeat center top/100% auto; 
+    background: #000 url(../images/monsters.jpg) no-repeat center top/cover; 
     color: #fff;
     font-family: sans-serif;
+    height: 2000px;
 }
 
 .page-header {
@@ -136,6 +138,7 @@ body {
 }
 
 .input-container input {
+    border: 1px solid #fff;
     flex-grow: 1;
 }
 
@@ -143,6 +146,18 @@ body {
     background-color: #d81e27;
     font-size: 1.25rem;
     color: inherit;
+}
+
+.container-wrap {
+    max-width: var(--max-w);
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+
+.container-wrap img {
+    width: 80px;
+    height: auto;
 }
 
 .container 
@@ -158,19 +173,19 @@ body {
     transition: 0.4s;
 }
 
+
 .container:hover {
     scale: 1.1;
-    background-image: var(--grd-type-a);
+    background-image: var(--grd-type-a-hover);
 }
 
 .container h4 {
     font-size: 1.25rem;
 }
 
-h4 strong {
+.h4 strong {
     font-size: inherit;
 }
-
 .container p {
     font-size: 1rem;
 }
@@ -181,7 +196,6 @@ h4 strong {
     align-items: center;
     width: 135px;
     height: 40px;
-    margin-top: 16px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: var(--radius-s);
     position: absolute;
@@ -197,4 +211,67 @@ h4 strong {
 
 .container strong {
         font-size: 1rem;
+}
+
+.inner {
+
+}
+
+.inner h4 {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.top-10 li {
+    margin: 12px;
+    padding: 0.4rem 1.375rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 4rem;
+    transition: 1s;
+}
+
+.top-10 li:hover {
+    transform: 0 0;
+    scale: 1.1;
+}
+
+.inner .poster {
+    width: 140px;
+    height: 196px;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-10 li .top-num {
+    position: absolute;
+    left: -10px;
+    bottom: -12px;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 5rem;
+    /* color: rgb(65, 65, 65); */
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0;
+}
+
+.cache-box {
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    padding: 24px;
+    margin: 12px auto;
+    border-radius: 1rem;
+    position: relative;
+}
+
+
+.cache-box img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
