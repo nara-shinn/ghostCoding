@@ -213,8 +213,8 @@ body {
         font-size: 1rem;
 }
 
-.inner {
-
+.inner ul {
+display: flex;
 }
 
 .inner h4 {
@@ -296,4 +296,69 @@ body {
     position: absolute;
     right: 15px;
     bottom: 15px;
+}
+
+.faq-container h6 {
+    margin-bottom: 1rem;
+}
+
+.faq-container h6, .faq-container summary{
+    font-size: 1.5rem;
+}
+
+.list li {
+    max-width: ;width: var(--max-w);
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #545454;
+}
+.list summary {
+    padding: 1.5rem;
+    border: 1px solid #000000;
+    position: relative;
+}
+
+.list div {
+    padding: 1.5rem;
+    border: 1px solid #000000;
+}
+
+.faq-container summary::after {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    content: "";
+    background: url(../images/icons/plus-solid-full.svg) no-repeat center center / contain;
+   transition: 0.4s;
+}
+
+.faq-container details[open] summary::after {
+rotate: -45deg;
+}
+
+.email-container {
+    align-items: center;
+}
+
+.email-container input {
+    width: 100%;
+    max-width: 605px;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: var(--radius-m);
+    margin-right: 20px;
+}
+
+.email-container button {
+
+    padding: 1rem;
+    border-radius: var(--radius-m);
+    background-color: #d81e27;
+    font-size: 1.125rem;
+}
+
+.page-footer li {
+    display: block;
+    margin: 12px 0 0 12px;
 }

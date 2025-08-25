@@ -9,17 +9,48 @@
 
 <body>
     <h1>
-         <a href="www.naver.com">네이버</a>
+         <a href="/">네이버</a>
         </h1>
     
-        <div class="id-container">
-            <label><input type="checkbox" name="id">실명 인증된 아이디로 가입</label>
-            <label><input type="text" name="id-box" placeholder="아이디">@naver.com</label>
-            <label><input type="password" name="password" placeholder="비밀번호"></label>
-            <label><input type="email" name="email" placeholder="[선택]이메일주소(비밀번호 찾기 등 본인 확인용)">[선택]</label>
-        </div>
+        <form name="auth">
+            <label>
+                <input type="checkbox"><span>실명 인증된 아이디로 가입</span></label>
 
-        <div class="per-container">
+            <label>
+                <input type="text" placeholder="아이디" required>@naver.com</label>
+
+            <label>
+                <input type="password" placeholder="비밀번호" required></label>
+            
+            <p>
+                <label for="user-email">[선택]</label>
+                <input type="email" id="user-email">
+            </p>
+<!--  <label><input type="email" placeholder="[선택]이메일주소(비밀번호 찾기 등 본인 확인용)">[선택]</label> -->
+
+            <input type="text" name="user-name" placeholder="이름" required>
+
+            <input type="text" name="user-birth" placeholder="생년월일 8자리" maxlength="8" required>
+
+            <button type="button">통신사 선택</button>
+            <label><input type="button" placeholder="SKT"></label>
+
+            <ul>
+                <li>
+                    <label><input type="radio" name="gender" id="male">남자</label>
+                    <label><input type="radio" name="gender" id="female">여자</label>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <label><input type="radio" name="korean" id="korean-y" checked>내국인</label>
+                    <label><input type="radio" name="gender" id="korean-n">외국인</label>
+                </li>
+            </ul>
+        </form>
+
+        <!-- <div class="per-container">
             <label><input type="text" name="name" placeholder="이름"></label>
             <label><input type="text" name="birth" placeholder="생년월일 8자리"></label>
             <button type="submit" id="kt">통신사 선택</button>
@@ -33,7 +64,7 @@
                 <label><input type="radio" name="local-1" value="local">내국인</label>
                 <label><input type="radio" name="local-2" value="foreigner">외국인</label>
             </div>
-        </div>
+        </div> -->
 
 </body>
 </html>
