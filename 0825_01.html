@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<style>
+.terms-container {
+    height: 150px;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 12px;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.terms-container p {
+line-height: 1;
+font-size: 12px;
+text-align: justify;
+}
+
+</style>
+
+<body>
+    <select>
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="jp">일본어</option>
+    </select>
+
+<select name="">
+    <optgroup label="서울시">
+        <option>구로구</option>
+        <option>강서구</option>
+    </optgroup>
+
+     <optgroup label="부산시">
+         <option>사하구</option>
+     </optgroup>
+
+      <optgroup label="제주도">
+          <option>제주시</option>
+          <option>서귀포시</option>
+      </optgroup>
+</select>
+
+<hr>
+<!-- hr은 거의 안씀. 그냥 예제만들떄나 쓴다 -->
+
+<textarea readonly disabled>
+    공백병합현상이 일어나지 않는다.
+    다양한 네이버 서비스를 즐겨보세요. 네이버는 
+    <a href="https:/www.naver.com" target="_blank"> 
+        www.naver.com
+    </a>
+</textarea>
+<div class="terms-container">
+    <h3>
+        다양한 네이버 서비스를 즐겨보세요 네이버는 
+    <a href="https:/www.naver.com" target="_blank"> 
+        www.naver.com
+    </a>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem.Lorem ipsum dolor, <br> sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem.Lorem ipsum dolor, <br> sit amet consectetur adipisicing elit. Rem, nihil ad voluptates recusandae facere molestias iste ratione quia praesentium officia totam ex vero nobis animi quo? Doloribus distinctio itaque voluptatem.
+    </p>
+    </h3>
+</div>
+
+<div class="phone-check">
+    <input type="tel" required
+    placeholder="'-'없이 숫자만 입력해주세요">
+    <button type="button" disabled>인증요청</button>
+    <hr>
+    <input type="test" disabled placeholder="인증번호 6자리">
+</div>
+<hr>
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="5" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+</body>
+</html>

@@ -30,6 +30,10 @@ form 사용자의 입력을 받는 부분
 
   <!-- <form action="./searchResult.html"> -->
     <!--action="link" 백엔드 서버로 보내주는 것 -->
+
+<!-- 
+    상하마진 겹침 현상: 큰 것만 남는다. 
+     -->
 <style>
 body {
     background-color: rgb(115, 207, 207);
@@ -55,6 +59,7 @@ input {
     border-radius: 8px;
     padding: 10px 50px;
     margin-bottom: 15px;
+    transition: 1s;
 }
 
 input::placeholder {
@@ -63,6 +68,10 @@ input::placeholder {
 
 input:focus {
     background-color: #dcedf8;
+}
+
+input:hover {
+    background-color: #194e54;
 }
 
 form button {
@@ -79,6 +88,8 @@ a {
     color: #818181;
     font-size: 12px;
     text-align: right;
+    /* 원래 a태그는 인라인 요소라 크기가 없어서 정렬이나 크기가 먹지 않지만 지금 display: srtretch 상태라 우연히 먹었을뿐임. 정석은 display: block으로 바꾸고 text align 주는거 
+    first-child는 상단 마진 안주는게 국룰*/
 }
 
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>아래에서 좋아하는 과목을 모두 선택하세요</p>
+    <!-- 명시적인 레이블. 웹표준/웹접근성이 가장 좋다 -->
+    <input type="checkbox" id="subject-1" name="subject"><label for="subject-1">HTML</label><br>
+    <input type="checkbox" id="subject-2" name="subject"><label for="subject-2">CSS</label><br>
+    <input type="checkbox" id="subject-3" name="subject"><label for="subject-3">JAVASCRIPT</label>
+
+    <p>자동로그인 설정하기</p>
+    <label><input type="checkbox" id="autologin"><label for="autologin"></label>
+    <!-- 암묵적인 레이블 -->
+
+    <P>평가를 해주세요</P>
+    <label><input type="radio" name="judgment">좋아요</label>
+    <label><input type="radio" name="judgment">싫어요</label>
+    <!-- 라디오 버튼은 단일속성이라 name버튼으로 정의 -->
+
+    <p>성별을 선택해주세요</p>
+    <label><input type="radio" name="gender" value="man"><span>남자</span></label>
+    <label><input type="radio" name="gender" value="woman"><span>여자</span></label>
+    <label><input type="radio" name="gender" value="etc"><span>기타</span></label>
+    <!-- 라디오 버튼 디자인하고, 버튼과 글씨의 간격을 조정하고 싶을때.. 등을 위해 글씨를 또 span으로 묶는다 -->
+
+    <p>메모를 남겨주세요</p>
+    <input type="text" name="memo" placeholder="메모를 입력하세요">
+
+</body>
+</html>
